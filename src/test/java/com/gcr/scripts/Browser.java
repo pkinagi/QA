@@ -12,6 +12,8 @@ public class Browser {
 		System.setProperty("webdriver.chrome.driver", "D:\\HPe WorkSpace\\Selenium Files\\Driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.github.com");
+		String BroswerTitle = driver.getTitle();
+		System.out.println(BroswerTitle);
 	}
 
 }
